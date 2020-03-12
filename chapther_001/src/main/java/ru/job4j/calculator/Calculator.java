@@ -1,5 +1,11 @@
 package ru.job4j.calculator;
 
+/**
+ * Class Calculate создан для тренировки.
+ * Method main
+ * @param args - args.
+ */
+
 public class Calculator {
     public static void add(double first, double second){
         double result = first + second;
