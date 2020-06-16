@@ -7,10 +7,17 @@ package ru.job4j.calculator;
  */
 
 public class Calculator {
-    public static void add(double first, double second){
-        double result = first + second;
-        System.out.println(first + "+" + second + " = " + result);
+    public double add(double first, double second){
+        return  first + second;
     }
+
+    public double add(double first, double second, double third){
+        return add(
+                first,
+                add(second,third)
+        );
+    }
+
     public static void div(double first, double second) {
         double result = first / second;
         System.out.println(first + "/" + second + " = " + result);
@@ -29,8 +36,6 @@ public class Calculator {
 
 
     public static void main(String[] args){
-        add(1,1);
-        add(2,2);
         div(4,2);
         multiply(2,1);
         substract(10,5);
