@@ -24,13 +24,13 @@ public class ShopDrop {
     }
 
     //Сдвигаем массив на 1 влево
-    public static Product[] leftShift(Product[] products, int index){
-        for (; index  < products.length; index++){
-            if (index == products.length - 1){
+    public static Product[] leftShift(Product[] products, int index) {
+        for (; index < products.length; index++) {
+            if (index == products.length - 1) {
                 products[index] = null;
                 break;
             }
-            products[index] = products [index + 1];
+            products[index] = products[index + 1];
 
         }
         return products;
